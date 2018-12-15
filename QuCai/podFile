@@ -1,0 +1,21 @@
+platform :ios, '9.0'
+
+inhibit_all_warnings!
+
+target 'QuCai' do
+
+    pod 'Masonry', '~> 1.1.0'
+    pod 'AFNetworking', '~> 3.2.1'
+    pod 'YYModel', '~> 1.0.4'
+    pod 'SDWebImage', '~> 4.3.3'
+    pod 'MJRefresh', '~> 3.1.15.3'
+    pod 'SDCycleScrollView', '~> 1.75'
+    pod 'MJExtension', '~> 3.0.13'
+    pod 'SVProgressHUD', '~> 2.2.5'
+    pod 'FSScrollContentView', '~> 1.0.9'
+    pod 'AFNetworkActivityLogger'
+    pod 'SDWebImage/GIF'
+    pod 'CDDPagerController'
+    pod 'DZNEmptyDataSet'
+    
+end

@@ -1,0 +1,70 @@
+//
+//  PrefixHeader.pch
+//  QuCai
+//
+//  Created by txkj_mac on 2017/5/18.
+//  Copyright © 2017年 Garfie. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+SZExtension.h"
+#import "UIColor+GExtension.h"
+#import "AppDelegate.h"
+#import "GConst.h"
+#import "GColor.h"
+#import <Masonry.h>
+#import "GUIHelper.h"
+#import <SDCycleScrollView.h>
+#import "SZNetWorkingManager.h"
+#import "GAPI.h"
+#import "GConsts.h"
+#import <MJExtension.h>
+#import <SDWebImageManager.h>
+#import <UIImageView+WebCache.h>
+#import <MJRefresh.h>
+#import "UIImage+Color.h"
+#import "GDataCheck.h"
+#import "NSString+string.h"
+#import <SVProgressHUD.h>
+#import "SZUser.h"
+#import "GTool.h"
+#import "SystemInfo.h"
+#import "GLoginVC.h"
+#import <WebKit/WebKit.h>
+#import <DCPagerController.h>
+#import "XPFPickerView.h"
+#import "UILabel+YBAttributeTextTapAction.h"
+#import "BRDatePickerView.h"
+#import "NSDate+BRAdd.h"
+//#import <AFNetworkActivityLogger.h>
+#import "UIScrollView+DREmptyDataSet.h"
+#import "UIScrollView+DRRefresh.h"
+
+
+/** 定义屏幕的宽度和高度 */
+#define kScreenWidth  [[UIScreen mainScreen] bounds].size.width
+#define kScreenHeight [[UIScreen mainScreen] bounds].size.height
+
+
+#define ViewWidth(v)                        v.frame.size.width
+#define ViewHeight(v)                       v.frame.size.height
+#define commonCellHeight 43.0//常用tableCell的高度
+#define mylableSize 15 ////设置常用字体大小为16
+
+#define mycommonEdge 13 //lable的上下左右编剧
+#define mylableSize_1080 42 ////设置常用字体大小为16
+#define mycommonEdge_1080 30 //lable的上下左右编剧
+
+#define kWeakSelf(x)            __weak typeof(self) x=self;
+
+
+/** 十六进制颜色转换 */
+#define GColorFromHexRGB(rgbHexValue) [UIColor colorWithRed:((float)((rgbHexValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbHexValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbHexValue & 0xFF))/255.0 alpha:1.0]
+
+// RGB颜色
+#define GColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define GrayColor [UIColor colorWithRed:239/255.0 green:239/255.0 blue:239/255.0 alpha:1]
+
+#endif /* PrefixHeader_pch */
